@@ -24,14 +24,12 @@ dog_breeds
 
 my_favorite_cities ["Lagos", "Cape Town", "Nairobi", "San Francisco", "Gaborone", "New York", "Berlin", "London"]
 my_favorite_cities.shift 
-
 my_favorite_cities
 
 //shift_with_args 
 
 ice_cream_brands = ["Blue Bell Creameries", "Ben & Jerry's", "Baskin Robbins", "Braum's", "Breyer's"]
 brands_removed = [" Blue Bell Creamerie", "Ben & Jerry's"]
-
 ice_cream_brands.shift (brands_removed)
 
 //concat 
