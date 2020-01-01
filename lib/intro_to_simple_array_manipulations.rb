@@ -5,50 +5,29 @@ next_color = " violet"
 colors_in_the_rainbow.push (next_color)
 
 
-
+//unshift 
 bouroughs_in_nyc ["Brooklyn", "Queens", "Manhattan", "Bronx"]
 new_neighborhood = "staten Island"
 bouroughs_in_nyc.unshift (new_neighborhood)
 
+//pop
+continents ["Africa", "Asia", "Europe", "North America", "South America", "Oceania", "Antarctica"]
+continents.pop
+continents
+
+//pop_with_args 
+dog_breeds ["Great Dane", "Golden Retriever", "Chihuahua", "Shiba Inu"]
+small_dogs = ["Chihuahua", "Shiba Inu"] 
+dog_breeds.pop (small_dogs)
+dog_breeds
 
 
+//shift
 
-  it "takes in two arguments, an array and a string and adds that string to the front of the array using the unshift method" do
-    expect(@updated_array.first).to eq(@new_neighborhood)
-  end
+my_favorite_cities ["Lagos", "Cape Town", "Nairobi", "San Francisco", "Gaborone", "New York", "Berlin", "London"]
+my_favorite_cities.shift 
 
-  it "increases the length of the array" do 
-    expect(@updated_array.size).to eq(5)
-  end
-end
-
-describe "using_pop" do
-  before(:each) do 
-    @continents = ["Africa", "Asia", "Europe", "North America", "South America", "Oceania", "Antarctica"]
-    @deleted_string = using_pop(@continents)
-  end
-  it "takes in argument of an array and uses the pop method to remove the last element from the array and return that element" do 
-    expect(@deleted_string).to eq("Antarctica")
-  end
-
-  it "decreases the length of the array by 1" do 
-    expect(@continents.size).to eq(6)
-  end
-end
-
-describe "pop_with_args" do
-  before(:each) do 
-    @dog_breeds = ["Great Dane", "Golden Retriever", "Chihuahua", "Shiba Inu"]
-    @small_dogs = pop_with_args(@dog_breeds)
-  end 
-  it "takes in an argument of an array and uses the pop method with an argument of 2 to remove the last two array items and return them" do 
-    expect(@small_dogs).to eq(["Chihuahua", "Shiba Inu"])
-  end 
-
-  it "decreases the length of the array by 2" do
-    expect(@dog_breeds.size).to eq(2)
-  end
-end
+my_favorite_cities
 
 describe "using_shift" do 
   before(:each) do 
