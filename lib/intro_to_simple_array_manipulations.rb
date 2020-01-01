@@ -32,17 +32,11 @@ my_favorite_cities
 //shift_with_args 
 
 ice_cream_brands = ["Blue Bell Creameries", "Ben & Jerry's", "Baskin Robbins", "Braum's", "Breyer's"]
-brands_removed = [""]
+brands_removed = [" Blue Bell Creamerie", "Ben & Jerry's"]
 
-  
-  it "takes in an argument of an array and uses the shift method with an argument of 2 to remove and return the first 2 items from the array" do 
-    expect(@brands_removed).to eq(["Blue Bell Creameries", "Ben & Jerry's"])
-  end
+ice_cream_brands.shift (brands_removed)
 
-  it "decreases the length of the array by 2" do 
-    expect(@brands_removed.size).to eq(2)
-  end
-end
+
 
 describe "using_concat" do 
   before(:each) do 
