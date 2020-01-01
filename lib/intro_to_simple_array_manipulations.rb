@@ -36,6 +36,12 @@ brands_removed = [" Blue Bell Creamerie", "Ben & Jerry's"]
 
 ice_cream_brands.shift (brands_removed)
 
+//concat 
+
+fav_things = ["raindrops on roses", "whiskers on kittens"]
+more_things = ["sports cars", "flatiron school"]
+
+
 
 
 describe "using_concat" do 
