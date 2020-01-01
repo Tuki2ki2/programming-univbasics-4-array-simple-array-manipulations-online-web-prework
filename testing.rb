@@ -55,6 +55,6 @@ instructors.delete ("Steven")
 
 famous_robots = ["Johnny 5", "R2D2", "Robocop"]
 
-famous_robots.deleteat 
+famous_robots. delete_at(2)
 
  
