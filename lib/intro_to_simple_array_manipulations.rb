@@ -59,6 +59,7 @@ instruments = ["Saxophone", ["Piano", "Trumpet"], "Violin", "Drums", "Flute"]
 instruments.flatten 
 
 
+//using_delete 
 
 describe "using_delete" do 
   it "takes in two arguments, an array and a string, and uses the delete method to remove any items from the array that are equal to that string" do
