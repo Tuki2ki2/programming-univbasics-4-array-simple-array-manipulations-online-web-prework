@@ -1,4 +1,4 @@
 array = [ "London", "Paris"]
-new_arrary = arrary.push ("Berlin")
+new_array = arrary.push ("Berlin")
 
 new_array
