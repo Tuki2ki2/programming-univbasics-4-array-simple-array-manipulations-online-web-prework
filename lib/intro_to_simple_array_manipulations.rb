@@ -45,6 +45,13 @@ all_fav= fav_things.concat (more_things)
 all_fav
 
 
+//insert
+list_of_programming_languages= ["Ruby", "JavaScript", "Java", "C#", "Objective C", "C++", "PHP"] 
+
+list_of_programming_languages [0, "Python"]
+
+list_of_programming_languages
+
 describe "using_insert" do 
   before(:each) do 
     @list_of_programming_languages = ["Ruby", "JavaScript", "Java", "C#", "Objective C", "C++", "PHP"]
